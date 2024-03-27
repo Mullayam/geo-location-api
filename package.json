@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "npx nodemon  index.ts",
-    "start": "node lib/index.js",
+    "start": "node build/index.js",
     "mig:create": "typeorm migration:create ./src/database/migrations/",
     "mig:run": "npx typeorm-ts-node-esm migration:generate ./src/database/migrations/ -d ./src/app/config/Datasource.ts",
     "mig:revert": "typeorm migration:revert -- -d ./src/config/c.ts",
